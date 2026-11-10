@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#e9dbce">
-  
-  <meta name="google-site-verification" content="etscqxzyzzOmosN4h29juVqifB3StT1ZN1ZSdEfLeno" />
-  
-  <meta name="description" content="Daniel Motta Mariano Gonçalves, psicólogo clínico em Itajubá e região. Atendimento presencial e online.">
-  <title>Daniel Motta Mariano Gonçalves | Psicólogo Clínico</title>
+  <meta name="description" content="Daniel Motta Mariano Gonçalves, psicólogo clínico em Itajubá e região. Atendimento psicológico presencial e online para adolescentes, adultos e idosos.">
+  <meta name="keywords" content="psicólogo em Itajubá, psicologia clínica, atendimento psicológico, psicólogo online, Psicologia Histórico-Cultural">
+  <meta name="author" content="Daniel Motta Mariano Gonçalves">
+  <meta name="robots" content="index, follow">
+
+  <title>Psicólogo Daniel Motta Mariano Gonçalves | Itajubá MG</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
@@ -25,9 +27,14 @@
       --linha: rgba(73,71,68,.15);
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 24px;
+    }
 
     body {
       margin: 0;
@@ -37,7 +44,17 @@
       line-height: 1.7;
     }
 
-    a { color: inherit; }
+    a {
+      color: inherit;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible {
+      outline: 3px solid var(--turquesa);
+      outline-offset: 3px;
+    }
 
     .container {
       width: min(1100px, calc(100% - 40px));
@@ -59,10 +76,43 @@
     }
 
     .logo {
-      font-family: "Playfair Display", serif;
-      font-size: 1.3rem;
-      font-weight: 700;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      color: var(--texto);
       text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .logo-symbol {
+      color: var(--vinho);
+      font-family: "DM Sans", sans-serif;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+      line-height: 1.15;
+    }
+
+    .logo-name {
+      color: var(--texto);
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: -.02em;
+    }
+
+    .logo-crp {
+      color: var(--suave);
+      font-size: .65rem;
+      font-weight: 500;
+      letter-spacing: .07em;
     }
 
     .links {
@@ -75,13 +125,15 @@
       text-decoration: none;
     }
 
-    .links a:hover { color: var(--vinho); }
+    .links a:hover {
+      color: var(--vinho);
+    }
 
     .hero {
       min-height: 680px;
       display: flex;
       align-items: center;
-      padding: 115px 0 75px;
+      padding: 125px 0 75px;
       background: var(--bege-claro);
       overflow: hidden;
     }
@@ -113,12 +165,14 @@
       letter-spacing: -.035em;
     }
 
-    h1 span { color: var(--vinho); }
+    h1 span {
+      color: inherit;
+    }
 
     .subtitle {
       margin: 0 0 22px;
       color: var(--suave);
-      font-size: 1.15rem;
+      font-size: 1.08rem;
     }
 
     .intro {
@@ -156,9 +210,13 @@
       transform: translateY(-2px);
     }
 
-    .secondary { border: 1px solid #a99d92; }
+    .secondary {
+      border: 1px solid #a99d92;
+    }
 
-    .secondary:hover { background: white; }
+    .secondary:hover {
+      background: white;
+    }
 
     .portrait-wrap {
       width: min(100%, 430px);
@@ -186,7 +244,9 @@
       box-shadow: 0 18px 50px #00000018;
     }
 
-    section { padding: 85px 0; }
+    section {
+      padding: 85px 0;
+    }
 
     .about-grid {
       display: grid;
@@ -207,16 +267,42 @@
       font: 1.3rem/1.5 "Playfair Display", Georgia, serif;
     }
 
-    .about-copy p { margin: 0 0 16px; }
+    .about-copy p {
+      margin: 0 0 16px;
+    }
 
-    .approach { background: var(--bege-claro); }
+    .approach {
+      background: var(--bege-claro);
+    }
 
     .approach-content {
       max-width: 850px;
       margin: 0 auto;
+      text-align: justify;
+      text-justify: inter-word;
     }
 
-    .approach-content p { margin: 0 0 19px; }
+    .approach-content p {
+      margin: 0 0 19px;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin: 0 auto 38px;
+      text-align: center;
+    }
+
+    .section-heading p {
+      color: var(--suave);
+    }
+
+    .quote-author {
+      margin-top: 12px;
+      color: var(--vinho) !important;
+      font-size: .95rem;
+      font-weight: 600;
+      text-align: center;
+    }
 
     .approach-emphasis {
       margin-top: 28px !important;
@@ -228,41 +314,97 @@
       text-align: center;
     }
 
-    .section-heading {
-      max-width: 700px;
-      margin: 0 auto 38px;
+    .publico {
+      background: var(--branco);
+    }
+
+    #atendimento {
+      background: var(--bege-claro);
+    }
+
+    .publico .section-heading {
+      margin-bottom: 25px;
+    }
+
+    .publico-frase {
+      margin: 0 auto 28px;
+      max-width: 720px;
+      color: var(--suave);
       text-align: center;
     }
 
-    .section-heading p { color: var(--suave); }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
+    .publico-lista {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      padding-top: 22px;
+      border-top: 1px solid var(--linha);
     }
 
-    .card {
-      padding: 26px;
-      background: var(--branco);
-      border: 1px solid var(--linha);
-      border-radius: 7px;
-    }
-
-    .number {
+    .publico-lista span {
       color: var(--vinho);
-      font: 1.8rem "Playfair Display", Georgia, serif;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(1.2rem, 2.4vw, 1.55rem);
     }
 
-    .card h3, .service h3 {
-      margin: 8px 0;
-      font-size: 1.4rem;
+    .publico-lista .separador {
+      color: #b9aaa0;
+      font-family: "DM Sans", sans-serif;
+      font-size: 1.2rem;
     }
 
-    .card p, .service p {
-      margin: 0;
+    .faq {
+      background: var(--bege-claro);
+    }
+
+    .faq-list {
+      max-width: 850px;
+      margin: 34px auto 0;
+      border-top: 1px solid var(--linha);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--linha);
+    }
+
+    .faq-item summary {
+      position: relative;
+      padding: 21px 42px 21px 4px;
+      color: var(--texto);
+      font-weight: 600;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: "+";
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--vinho);
+      font-size: 1.35rem;
+      font-weight: 400;
+    }
+
+    .faq-item[open] summary::after {
+      content: "−";
+    }
+
+    .faq-answer {
+      max-width: 760px;
+      padding: 0 30px 20px 4px;
       color: var(--suave);
-      font-size: .96rem;
+    }
+
+    .faq-answer p {
+      margin: 0;
     }
 
     .services {
@@ -277,7 +419,20 @@
       border-radius: 7px;
     }
 
-    .contact { background: var(--bege); }
+    .service h3 {
+      margin: 8px 0;
+      font-size: 1.4rem;
+    }
+
+    .service p {
+      margin: 0;
+      color: var(--suave);
+      font-size: .96rem;
+    }
+
+    .contact {
+      background: var(--bege);
+    }
 
     .contact-layout {
       display: grid;
@@ -286,7 +441,9 @@
       align-items: start;
     }
 
-    .contact-copy p { color: #655e58; }
+    .contact-copy p {
+      color: #655e58;
+    }
 
     .contact-links {
       display: grid;
@@ -299,7 +456,9 @@
       font-weight: 600;
     }
 
-    .contact-links a:hover { color: var(--vinho); }
+    .contact-links a:hover {
+      color: var(--vinho);
+    }
 
     .contact-form {
       padding: 30px;
@@ -320,7 +479,9 @@
       font-size: .92rem;
     }
 
-    .field { margin-bottom: 16px; }
+    .field {
+      margin-bottom: 16px;
+    }
 
     label {
       display: block;
@@ -404,7 +565,7 @@
       nav {
         align-items: flex-start;
         flex-direction: column;
-        gap: 8px;
+        gap: 12px;
       }
 
       .links {
@@ -413,31 +574,57 @@
         flex-wrap: wrap;
       }
 
-      .links a { font-size: .8rem; }
+      .links a {
+        font-size: .8rem;
+      }
 
       .hero {
         min-height: 0;
         padding: 55px 0 65px;
       }
 
-      .hero-grid, .about-grid, .contact-layout {
+      .hero-grid,
+      .about-grid,
+      .contact-layout {
         grid-template-columns: 1fr;
         gap: 38px;
       }
 
-      .hero-copy { text-align: center; }
+      .hero-copy {
+        text-align: center;
+      }
 
-      .intro { margin-inline: auto; }
+      .intro {
+        margin-inline: auto;
+      }
 
-      .actions { justify-content: center; }
+      .actions {
+        justify-content: center;
+      }
 
-      .portrait-wrap { width: min(78%, 340px); }
+      .portrait-wrap {
+        width: min(78%, 340px);
+      }
 
-      section { padding: 65px 0; }
+      section {
+        padding: 65px 0;
+      }
 
-      .cards, .services { grid-template-columns: 1fr; }
+      .services {
+        grid-template-columns: 1fr;
+      }
 
-      .contact-form { padding: 23px; }
+      .contact-form {
+        padding: 23px;
+      }
+
+      .approach-content {
+        text-align: left;
+      }
+
+      .publico-lista {
+        gap: 9px;
+      }
     }
   </style>
 </head>
@@ -446,27 +633,43 @@
 
   <header>
     <nav class="container" aria-label="Navegação principal">
-      <a class="logo" href="#inicio" aria-label="Início">Ψ</a>
+
+      <a class="logo" href="#inicio" aria-label="Início">
+        <span class="logo-symbol" aria-hidden="true">Ψ</span>
+
+        <span class="logo-text">
+          <span class="logo-name">Daniel Motta Mariano Gonçalves</span>
+          <span class="logo-crp">CRP 04/86286</span>
+        </span>
+      </a>
 
       <div class="links">
         <a href="#sobre">Sobre</a>
         <a href="#abordagem">Abordagem</a>
+        <a href="#publico">Público atendido</a>
         <a href="#atendimento">Atendimento</a>
+        <a href="#duvidas">Dúvidas frequentes</a>
         <a href="#contato">Contato</a>
       </div>
+
     </nav>
   </header>
 
   <main>
 
+    <!-- INÍCIO -->
+
     <section class="hero" id="inicio">
       <div class="container hero-grid">
 
         <div class="hero-copy">
-          <h1>Daniel Motta</h1>
+
+          <div class="eyebrow">Psicologia clínica</div>
+
+          <h1>Daniel <span>Motta</span></h1>
 
           <p class="subtitle">
-            Daniel Motta Mariano Gonçalves · Psicólogo Clínico · CRP 04/86286
+            Psicólogo Clínico · CRP 04/86286
           </p>
 
           <p class="intro">
@@ -475,29 +678,38 @@
           </p>
 
           <div class="actions">
-            <a class="button primary" href="https://wa.me/5519982483677"
-               target="_blank" rel="noopener">
+
+            <a class="button primary"
+               href="https://wa.me/5519982483677"
+               target="_blank"
+               rel="noopener">
               Conversar pelo WhatsApp
             </a>
 
             <a class="button secondary" href="#sobre">
               Conheça meu trabalho
             </a>
+
           </div>
         </div>
 
         <div class="portrait-wrap">
-          <img class="portrait" src="foto-daniel.jpg"
-               alt="Retrato de Daniel Motta Mariano Gonçalves">
+          <img
+            class="portrait"
+            src="foto-daniel.jpg"
+            alt="Retrato de Daniel Motta Mariano Gonçalves">
         </div>
 
       </div>
     </section>
 
+    <!-- SOBRE MIM -->
+
     <section id="sobre">
       <div class="container about-grid">
 
         <div>
+
           <div class="eyebrow">Sobre mim</div>
 
           <h2>Compreender a história para acolher a pessoa.</h2>
@@ -506,9 +718,11 @@
             Cada trajetória é singular e se constitui nas relações,
             nas experiências e nas condições concretas de vida.
           </p>
+
         </div>
 
         <div class="about-copy">
+
           <p>
             Sou psicólogo e desenvolvo meu trabalho a partir de uma
             compreensão integral da saúde mental, considerando a
@@ -523,36 +737,44 @@
           </p>
 
           <p>
-            Atualmente, realizo atendimentos clínicos presenciais e online,
-            em Itajubá e região, buscando oferecer um espaço ético de escuta,
-            acolhimento e reflexão.
+            Desde minha formação, em 2023, atuo na clínica psicológica.
+            Atualmente, realizo atendimentos presenciais em Itajubá e região,
+            além da modalidade online, buscando oferecer um espaço ético
+            de escuta, acolhimento e reflexão.
           </p>
+
         </div>
 
       </div>
     </section>
 
+    <!-- ABORDAGEM -->
+
     <section class="approach" id="abordagem">
       <div class="container">
 
         <div class="section-heading">
+
           <div class="eyebrow">Minha abordagem</div>
 
           <h2>
             “Nós nos transformamos em nós mesmos através dos outros.”
           </h2>
 
+          <p class="quote-author">— Lev S. Vigotski</p>
+
           <p>
             Uma perspectiva que reconhece a relação entre as histórias
             pessoais e a vida em sociedade.
           </p>
+
         </div>
 
         <div class="approach-content">
 
           <p>
             A Psicologia Histórico-Cultural, inspirada nos estudos de
-            Lev Vygotsky, compreende que nos constituímos
+            <strong>Lev S. Vigotski</strong>, compreende que nos constituímos
             nas relações com outras pessoas, na cultura e nas experiências
             que vivemos. Nosso desenvolvimento não acontece de forma
             isolada: ele está profundamente ligado ao contexto social
@@ -577,7 +799,7 @@
 
           <p>
             Meu trabalho busca compreender essa conexão entre a história
-            de cada pessoa e a estrutura social, construindo um
+            singular de cada pessoa e a estrutura social, construindo um
             espaço de escuta e reflexão comprometido com a autonomia,
             a emancipação e a construção de novas possibilidades de vida.
           </p>
@@ -591,75 +813,227 @@
       </div>
     </section>
 
+    <!-- PÚBLICO ATENDIDO -->
+
+    <section class="publico" id="publico">
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="eyebrow">Público atendido</div>
+
+          <h2>
+            O desenvolvimento humano acontece ao longo de toda a vida.
+          </h2>
+
+        </div>
+
+        <p class="publico-frase">
+          O acompanhamento psicológico considera as experiências,
+          os desafios e as possibilidades que se apresentam em diferentes
+          momentos da trajetória de cada pessoa. Na minha prática, tenho
+          disponibilidade para atendimentos com adolescentes, adultos e idosos.
+        </p>
+
+        <div class="publico-lista" aria-label="Públicos atendidos">
+
+          <span>Adolescentes</span>
+          <span class="separador" aria-hidden="true">·</span>
+          <span>Adultos</span>
+          <span class="separador" aria-hidden="true">·</span>
+          <span>Idosos</span>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MODALIDADES -->
+
     <section id="atendimento">
       <div class="container">
 
         <div class="section-heading">
+
           <div class="eyebrow">Modalidades</div>
 
-          <h2>Atendimento em Itajubá e região e na modalidade on-line</h2>
+          <h2>Atendimento em Itajubá e região</h2>
 
           <p>
             Possibilidades de atendimento que consideram diferentes rotinas
             e necessidades de acesso ao cuidado psicológico.
           </p>
+
         </div>
 
         <div class="services">
 
           <article class="service">
+
             <h3>Atendimento presencial</h3>
+
             <p>
               Atendimentos clínicos em Itajubá e região, em um espaço
               de escuta e acolhimento.
             </p>
+
           </article>
 
           <article class="service">
+
             <h3>Atendimento online</h3>
+
             <p>
               Atendimento psicológico online, oferecendo flexibilidade
               e a possibilidade de cuidado à distância.
             </p>
+
           </article>
 
           <article class="service">
+
             <h3>Atendimento domiciliar</h3>
+
             <p>
               Possibilidade de atendimento domiciliar em situações
               de dificuldade de locomoção. Consulte a disponibilidade.
             </p>
+
           </article>
 
           <article class="service">
+
             <h3>Atendimento individual</h3>
+
             <p>
               Um espaço individual para falar sobre suas experiências,
               compreender questões e construir caminhos possíveis.
             </p>
+
           </article>
 
         </div>
       </div>
     </section>
 
+    <!-- DÚVIDAS FREQUENTES -->
+
+    <section class="faq" id="duvidas">
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="eyebrow">Dúvidas frequentes</div>
+
+          <h2>Algumas informações sobre o atendimento</h2>
+
+          <p>
+            Se você está considerando iniciar um acompanhamento psicológico,
+            estas respostas podem ajudar a esclarecer algumas dúvidas.
+          </p>
+
+        </div>
+
+        <div class="faq-list">
+
+          <details class="faq-item">
+
+            <summary>Como funciona o primeiro atendimento?</summary>
+
+            <div class="faq-answer">
+              <p>
+                O primeiro encontro é um momento de acolhimento e escuta,
+                no qual podemos conversar sobre o que motivou a busca por
+                atendimento psicológico, suas expectativas e questões que
+                considera importantes.
+              </p>
+            </div>
+
+          </details>
+
+          <details class="faq-item">
+
+            <summary>O atendimento pode ser realizado online?</summary>
+
+            <div class="faq-answer">
+              <p>
+                Sim. Os atendimentos podem acontecer presencialmente, em
+                Itajubá e região, ou de forma online, conforme a disponibilidade
+                e as necessidades de cada pessoa.
+              </p>
+            </div>
+
+          </details>
+
+          <details class="faq-item">
+
+            <summary>Qual é a duração e a frequência das sessões?</summary>
+
+            <div class="faq-answer">
+              <p>
+                A duração e a frequência dos encontros são conversadas e
+                definidas considerando as necessidades de cada pessoa e os
+                aspectos técnicos do acompanhamento psicológico.
+              </p>
+            </div>
+
+          </details>
+
+          <details class="faq-item">
+
+            <summary>Você atende adolescentes, adultos e idosos?</summary>
+
+            <div class="faq-answer">
+              <p>
+                Sim. O atendimento é destinado a adolescentes, adultos e idosos,
+                considerando as experiências e particularidades de cada
+                momento da vida.
+              </p>
+            </div>
+
+          </details>
+
+          <details class="faq-item">
+
+            <summary>Como faço para agendar um atendimento?</summary>
+
+            <div class="faq-answer">
+              <p>
+                Você pode entrar em contato pelo WhatsApp, disponível nesta
+                página, para obter informações e consultar a disponibilidade
+                de horários.
+              </p>
+            </div>
+
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+
     <section class="contact" id="contato">
       <div class="container contact-layout">
 
         <div class="contact-copy">
+
           <div class="eyebrow">Vamos conversar?</div>
 
           <h2>O primeiro contato pode começar por aqui.</h2>
 
           <p>
             Se deseja saber mais sobre os atendimentos ou verificar
-            a disponibilidade de horários, envie seus dados pelo formulário abaixo.
+            a disponibilidade de horários, envie seus dados pelo formulário.
             A mensagem será encaminhada diretamente para meu WhatsApp.
           </p>
 
           <div class="contact-links">
-            <a href="https://wa.me/5519982483677"
-               target="_blank" rel="noopener">
+
+            <a
+              href="https://wa.me/5519982483677"
+              target="_blank"
+              rel="noopener">
               WhatsApp: (19) 98248-3677
             </a>
 
@@ -668,7 +1042,9 @@
             </a>
 
             <span>Itajubá e região · Presencial e online</span>
+
           </div>
+
         </div>
 
         <form class="contact-form" id="whatsappForm">
@@ -680,23 +1056,42 @@
           </p>
 
           <div class="field">
+
             <label for="nome">Seu nome</label>
-            <input id="nome" name="nome" type="text"
-                   placeholder="Como podemos chamar você?"
-                   autocomplete="name" required>
+
+            <input
+              id="nome"
+              name="nome"
+              type="text"
+              placeholder="Como podemos chamar você?"
+              autocomplete="name"
+              required>
+
           </div>
 
           <div class="field">
+
             <label for="telefone">Seu telefone</label>
-            <input id="telefone" name="telefone" type="tel"
-                   placeholder="(DDD) 00000-0000"
-                   autocomplete="tel" required>
+
+            <input
+              id="telefone"
+              name="telefone"
+              type="tel"
+              placeholder="(DDD) 00000-0000"
+              autocomplete="tel"
+              required>
+
           </div>
 
           <div class="field">
+
             <label for="mensagem">Mensagem (opcional)</label>
-            <textarea id="mensagem" name="mensagem"
-                      placeholder="Conte brevemente como posso ajudar."></textarea>
+
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              placeholder="Conte brevemente como posso ajudar."></textarea>
+
           </div>
 
           <button class="button primary" type="submit">
@@ -709,44 +1104,70 @@
           </p>
 
         </form>
+
       </div>
     </section>
 
   </main>
 
+  <!-- RODAPÉ -->
+
   <footer>
+
     <div class="container">
-      <span>© <span id="year"></span></span>
-      <span>Psicólogo Clínico · CRP 04/86286 · Itajubá e região</span>
+
+      <span>
+        © <span id="year"></span> Daniel Motta Mariano Gonçalves
+      </span>
+
+      <span>
+        Psicólogo Clínico · CRP 04/86286 · Itajubá e região
+      </span>
+
     </div>
+
   </footer>
 
-  <a class="whatsapp-float"
-     href="https://wa.me/5519982483677"
-     target="_blank" rel="noopener"
-     aria-label="Fale pelo WhatsApp">
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/5519982483677"
+    target="_blank"
+    rel="noopener"
+    aria-label="Fale pelo WhatsApp">
     WhatsApp
   </a>
 
+  <!-- JAVASCRIPT -->
+
   <script>
+
     document.getElementById("year").textContent =
       new Date().getFullYear();
 
     document.getElementById("whatsappForm").addEventListener(
       "submit",
       function (event) {
+
         event.preventDefault();
 
-        const nome = document.getElementById("nome").value.trim();
-        const telefone = document.getElementById("telefone").value.trim();
-        const mensagem = document.getElementById("mensagem").value.trim();
+        const nome =
+          document.getElementById("nome").value.trim();
+
+        const telefone =
+          document.getElementById("telefone").value.trim();
+
+        const mensagem =
+          document.getElementById("mensagem").value.trim();
 
         if (!nome || !telefone) {
           alert("Por favor, preencha seu nome e telefone.");
           return;
         }
 
-        let texto = "Olá, Daniel! Meu nome é " + nome +
+        let texto =
+          "Olá, Daniel! Meu nome é " + nome +
           " e meu telefone é " + telefone +
           ". Gostaria de informações sobre os atendimentos.";
 
@@ -754,12 +1175,15 @@
           texto += "\n\nMensagem: " + mensagem;
         }
 
-        const url = "https://wa.me/5519982483677?text=" +
+        const url =
+          "https://wa.me/5519982483677?text=" +
           encodeURIComponent(texto);
 
         window.open(url, "_blank", "noopener,noreferrer");
+
       }
     );
+
   </script>
 
 </body>
